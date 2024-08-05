@@ -1,0 +1,45 @@
+POLYGLOT *** START ***
+POLYGLOT INI file "/snap/gnuchess/10/share/gnuchess/gnuchess.ini"
+> ENGINE uci
+< ENGINE id name GNU Chess 6.2.5
+< ENGINE id author GNU Chess team
+< ENGINE option name Hash type spin default 16 min 4 max 1024
+< ENGINE option name Ponder type check default false
+< ENGINE option name OwnBook type check default true
+< ENGINE option name BookFile type string default book_small.bin
+< ENGINE option name NullMove Pruning type combo default Fail High var Always var Fail High var Never
+< ENGINE option name NullMove Reduction type spin default 3 min 1 max 3
+< ENGINE option name Verification Search type combo default Endgame var Always var Endgame var Never
+< ENGINE option name Verification Reduction type spin default 5 min 1 max 6
+< ENGINE option name History Pruning type check default true
+< ENGINE option name History Threshold type spin default 60 min 0 max 100
+< ENGINE option name Futility Pruning type check default false
+< ENGINE option name Futility Margin type spin default 100 min 0 max 500
+< ENGINE option name Delta Pruning type check default false
+< ENGINE option name Delta Margin type spin default 50 min 0 max 500
+< ENGINE option name Quiescence Check Plies type spin default 1 min 0 max 2
+< ENGINE option name Material type spin default 100 min 0 max 400
+< ENGINE option name Piece Activity type spin default 100 min 0 max 400
+< ENGINE option name King Safety type spin default 100 min 0 max 400
+< ENGINE option name Pawn Structure type spin default 100 min 0 max 400
+< ENGINE option name Passed Pawns type spin default 100 min 0 max 400
+< ENGINE uciok
+> ENGINE setoption name Hash value 256
+> ENGINE setoption name OwnBook value false
+> ENGINE setoption name BookFile value smallbook.bin
+> ENGINE isready
+< XBOARD e2e4
+POLYGLOT MOVE e4
+POLYGLOT WAIT -> THINK
+POLYGLOT *BOOK MOVE*
+> XBOARD move e7e5
+POLYGLOT MOVE e5
+POLYGLOT THINK -> WAIT
+< ENGINE readyok
+< XBOARD Nc3
+POLYGLOT MOVE Nc3
+POLYGLOT WAIT -> THINK
+POLYGLOT *BOOK MOVE*
+> XBOARD move g8f6
+POLYGLOT MOVE Nf6
+POLYGLOT THINK -> WAIT
